@@ -1,0 +1,10 @@
+groq>=1.7.0
+pydantic>=2.14
+python-dotenv>=1.0
+# testing
+pytest>=9.0
+pytest-cov>=6.0
+# notebook (optional)
+nbformat>=5.10
+nbclient>=0.10
+ipykernel>=6.29

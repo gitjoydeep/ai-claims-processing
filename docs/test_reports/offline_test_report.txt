@@ -1,0 +1,202 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- .venv/bin/python
+rootdir: <project-root>
+configfile: pytest.ini
+testpaths: tests
+plugins: platformdirs-4.13.6, cov-7.1.0, anyio-4.15.1, langsmith-0.14.14
+collecting ... collected 169 items / 11 deselected / 158 selected
+
+tests/integration/test_cli.py::test_cli_run_writes_all_outputs PASSED    [  0%]
+tests/integration/test_cli.py::test_cli_single_email_and_bad_input PASSED [  1%]
+tests/integration/test_workflow.py::test_end_to_end_each_dataset_email[Water damage in my bathroom] PASSED [  1%]
+tests/integration/test_workflow.py::test_end_to_end_each_dataset_email[Burglary at my home] PASSED [  2%]
+tests/integration/test_workflow.py::test_end_to_end_each_dataset_email[Fire damage in my living room] PASSED [  3%]
+tests/integration/test_workflow.py::test_end_to_end_each_dataset_email[Engine breakdown claim] PASSED [  3%]
+tests/integration/test_workflow.py::test_end_to_end_each_dataset_email[My car has been stolen] PASSED [  4%]
+tests/integration/test_workflow.py::test_end_to_end_each_dataset_email[Cracked windshield due to falling tree branch] PASSED [  5%]
+tests/integration/test_workflow.py::test_end_to_end_each_dataset_email[Request for hospitalisation claim] PASSED [  5%]
+tests/integration/test_workflow.py::test_end_to_end_each_dataset_email[Hospitalisation reimbursement request] PASSED [  6%]
+tests/integration/test_workflow.py::test_end_to_end_each_dataset_email[Request to initiate death claim] PASSED [  6%]
+tests/integration/test_workflow.py::test_end_to_end_each_dataset_email[Need assistance with a life insurance claim] PASSED [  7%]
+tests/integration/test_workflow.py::test_incomplete_claims_skip_classification_and_policy PASSED [  8%]
+tests/integration/test_workflow.py::test_specific_pending_reasons PASSED [  8%]
+tests/integration/test_workflow.py::test_rejection_cites_exclusion_and_has_no_payout PASSED [  9%]
+tests/integration/test_workflow.py::test_stage_handoff_data_flows_through PASSED [ 10%]
+tests/integration/test_workflow.py::test_retry_does_not_duplicate_customer_email PASSED [ 10%]
+tests/integration/test_workflow.py::test_llm_outage_is_fail_safe[claim_extraction] PASSED [ 11%]
+tests/integration/test_workflow.py::test_llm_outage_is_fail_safe[classification_few_shot] PASSED [ 12%]
+tests/integration/test_workflow.py::test_llm_outage_is_fail_safe[policy_match] PASSED [ 12%]
+tests/integration/test_workflow.py::test_error_reports_the_failing_step PASSED [ 13%]
+tests/integration/test_workflow.py::test_uncertain_classification_routes_to_review PASSED [ 13%]
+tests/integration/test_workflow.py::test_prompt_injection_cannot_approve PASSED [ 14%]
+tests/integration/test_workflow.py::test_audit_trail_covers_every_stage_without_pii PASSED [ 15%]
+tests/unit/test_classification_catalog.py::test_agreeing_confident_methods_are_reliable PASSED [ 15%]
+tests/unit/test_classification_catalog.py::test_unreliable_classification_is_flagged_not_forced[zero0-few0-disagree] PASSED [ 16%]
+tests/unit/test_classification_catalog.py::test_unreliable_classification_is_flagged_not_forced[zero1-few1-Uncertain] PASSED [ 17%]
+tests/unit/test_classification_catalog.py::test_unreliable_classification_is_flagged_not_forced[zero2-few2-below] PASSED [ 17%]
+tests/unit/test_classification_catalog.py::test_classifier_on_all_four_categories[Water damage in my bathroom] PASSED [ 18%]
+tests/unit/test_classification_catalog.py::test_classifier_on_all_four_categories[Burglary at my home] PASSED [ 18%]
+tests/unit/test_classification_catalog.py::test_classifier_on_all_four_categories[Fire damage in my living room] PASSED [ 19%]
+tests/unit/test_classification_catalog.py::test_classifier_on_all_four_categories[Engine breakdown claim] PASSED [ 20%]
+tests/unit/test_classification_catalog.py::test_classifier_on_all_four_categories[My car has been stolen] PASSED [ 20%]
+tests/unit/test_classification_catalog.py::test_classifier_on_all_four_categories[Cracked windshield due to falling tree branch] PASSED [ 21%]
+tests/unit/test_classification_catalog.py::test_classifier_on_all_four_categories[Request for hospitalisation claim] PASSED [ 22%]
+tests/unit/test_classification_catalog.py::test_classifier_on_all_four_categories[Hospitalisation reimbursement request] PASSED [ 22%]
+tests/unit/test_classification_catalog.py::test_classifier_on_all_four_categories[Request to initiate death claim] PASSED [ 23%]
+tests/unit/test_classification_catalog.py::test_classifier_on_all_four_categories[Need assistance with a life insurance claim] PASSED [ 24%]
+tests/unit/test_classification_catalog.py::test_classification_input_excludes_pii PASSED [ 24%]
+tests/unit/test_classification_catalog.py::test_confidence_clamped PASSED [ 25%]
+tests/unit/test_classification_catalog.py::test_few_shot_prompt_contains_examples_not_dataset_emails PASSED [ 25%]
+tests/unit/test_classification_catalog.py::test_policy_dictionary_matches_supplied_policy_file SKIPPED [ 26%]
+tests/unit/test_classification_catalog.py::test_requirement_specs_cover_every_policy_requirement PASSED [ 27%]
+tests/unit/test_classification_catalog.py::test_determinable_exclusions_are_real_policy_exclusions PASSED [ 27%]
+tests/unit/test_classification_catalog.py::test_unknown_policy_type PASSED [ 28%]
+tests/unit/test_communication_infra.py::test_approval_email_contains_verified_payout_and_breakdown PASSED [ 29%]
+tests/unit/test_communication_infra.py::test_rejection_email_names_exclusion PASSED [ 29%]
+tests/unit/test_communication_infra.py::test_pending_missing_details_lists_all_six_and_marks_missing PASSED [ 30%]
+tests/unit/test_communication_infra.py::test_pending_outstanding_items_only_lists_outstanding PASSED [ 31%]
+tests/unit/test_communication_infra.py::test_no_name_falls_back_to_generic_greeting PASSED [ 31%]
+tests/unit/test_communication_infra.py::test_llm_draft_accepted_when_verified PASSED [ 32%]
+tests/unit/test_communication_infra.py::test_llm_draft_with_invented_amount_falls_back_to_template PASSED [ 32%]
+tests/unit/test_communication_infra.py::test_llm_draft_contradicting_outcome_falls_back PASSED [ 33%]
+tests/unit/test_communication_infra.py::test_llm_failure_falls_back_to_template PASSED [ 34%]
+tests/unit/test_communication_infra.py::test_verify_draft_requires_listed_items PASSED [ 34%]
+tests/unit/test_communication_infra.py::test_templates_render_for_every_type PASSED [ 35%]
+tests/unit/test_communication_infra.py::test_outbox_suppresses_duplicates PASSED [ 36%]
+tests/unit/test_communication_infra.py::test_idempotency_key_stable_across_llm_wording PASSED [ 36%]
+tests/unit/test_communication_infra.py::test_audit_log_writes_jsonl_without_pii PASSED [ 37%]
+tests/unit/test_communication_infra.py::test_strict_schema_all_required_no_extras PASSED [ 37%]
+tests/unit/test_communication_infra.py::test_llm_client_retries_invalid_json_then_succeeds PASSED [ 38%]
+tests/unit/test_communication_infra.py::test_llm_client_raises_typed_error_after_retries PASSED [ 39%]
+tests/unit/test_communication_infra.py::test_backoff_honours_retry_after PASSED [ 39%]
+tests/unit/test_extraction_completeness.py::test_extractor_returns_parsed_amount_and_date PASSED [ 40%]
+tests/unit/test_extraction_completeness.py::test_extraction_prompt_has_guard_and_delimited_email PASSED [ 41%]
+tests/unit/test_extraction_completeness.py::test_hallucinated_policy_number_is_flagged PASSED [ 41%]
+tests/unit/test_extraction_completeness.py::test_hallucinated_amount_not_parsed PASSED [ 42%]
+tests/unit/test_extraction_completeness.py::test_date_not_in_email_is_dropped PASSED [ 43%]
+tests/unit/test_extraction_completeness.py::test_invalid_date_format_flagged PASSED [ 43%]
+tests/unit/test_extraction_completeness.py::test_completeness_on_dataset_cases[Water damage in my bathroom-missing0] PASSED [ 44%]
+tests/unit/test_extraction_completeness.py::test_completeness_on_dataset_cases[Fire damage in my living room-missing1] PASSED [ 44%]
+tests/unit/test_extraction_completeness.py::test_completeness_on_dataset_cases[Cracked windshield due to falling tree branch-missing2] PASSED [ 45%]
+tests/unit/test_extraction_completeness.py::test_completeness_on_dataset_cases[Need assistance with a life insurance claim-missing3] PASSED [ 46%]
+tests/unit/test_extraction_completeness.py::test_all_six_mandatory_fields_checked PASSED [ 46%]
+tests/unit/test_extraction_completeness.py::test_optional_fields_do_not_block PASSED [ 47%]
+tests/unit/test_extraction_completeness.py::test_future_event_date_invalid PASSED [ 48%]
+tests/unit/test_extraction_completeness.py::test_zero_amount_invalid PASSED [ 48%]
+tests/unit/test_extraction_completeness.py::test_blank_strings_count_as_missing PASSED [ 49%]
+tests/unit/test_money_ingestion.py::test_parse_amount_indian_formats[Rs. 1,20,000-expected0] PASSED [ 50%]
+tests/unit/test_money_ingestion.py::test_parse_amount_indian_formats[Rs. 45,000-expected1] PASSED [ 50%]
+tests/unit/test_money_ingestion.py::test_parse_amount_indian_formats[\u20b985,000.50-expected2] PASSED [ 51%]
+tests/unit/test_money_ingestion.py::test_parse_amount_indian_formats[INR 15,00,000-expected3] PASSED [ 51%]
+tests/unit/test_money_ingestion.py::test_parse_amount_indian_formats[2.5 lakh-expected4] PASSED [ 52%]
+tests/unit/test_money_ingestion.py::test_parse_amount_indian_formats[1 crore-expected5] PASSED [ 53%]
+tests/unit/test_money_ingestion.py::test_parse_amount_refuses_missing_or_ambiguous[None] PASSED [ 53%]
+tests/unit/test_money_ingestion.py::test_parse_amount_refuses_missing_or_ambiguous[] PASSED [ 54%]
+tests/unit/test_money_ingestion.py::test_parse_amount_refuses_missing_or_ambiguous[not yet known] PASSED [ 55%]
+tests/unit/test_money_ingestion.py::test_parse_amount_refuses_missing_or_ambiguous[Rs. 10,000 or Rs. 20,000] PASSED [ 55%]
+tests/unit/test_money_ingestion.py::test_format_inr[amount0-Rs. 80,000.00] PASSED [ 56%]
+tests/unit/test_money_ingestion.py::test_format_inr[amount1-Rs. 1,20,000.00] PASSED [ 56%]
+tests/unit/test_money_ingestion.py::test_format_inr[amount2-Rs. 15,00,000.00] PASSED [ 57%]
+tests/unit/test_money_ingestion.py::test_format_inr[amount3-Rs. 6,48,000.00] PASSED [ 58%]
+tests/unit/test_money_ingestion.py::test_format_inr[amount4-Rs. 999.00] PASSED [ 58%]
+tests/unit/test_money_ingestion.py::test_format_inr[amount5-Rs. 1,23,45,678.90] PASSED [ 59%]
+tests/unit/test_money_ingestion.py::test_amounts_in_text PASSED          [ 60%]
+tests/unit/test_money_ingestion.py::test_dataset_parsing_strips_ground_truth_header PASSED [ 60%]
+tests/unit/test_money_ingestion.py::test_parse_single_email_without_header PASSED [ 61%]
+tests/unit/test_money_ingestion.py::test_malformed_emails_rejected[] PASSED [ 62%]
+tests/unit/test_money_ingestion.py::test_malformed_emails_rejected[   \n ] PASSED [ 62%]
+tests/unit/test_money_ingestion.py::test_malformed_emails_rejected[Subject: only a subject] PASSED [ 63%]
+tests/unit/test_money_ingestion.py::test_oversized_email_rejected PASSED [ 63%]
+tests/unit/test_money_ingestion.py::test_control_characters_removed PASSED [ 64%]
+tests/unit/test_money_ingestion.py::test_claim_reference_is_deterministic PASSED [ 65%]
+tests/unit/test_money_ingestion.py::test_wrap_neutralises_delimiter_injection PASSED [ 65%]
+tests/unit/test_money_ingestion.py::test_text_contains_verbatim_and_ellipsis[my geyser burst-True] PASSED [ 66%]
+tests/unit/test_money_ingestion.py::test_text_contains_verbatim_and_ellipsis[MY  Geyser\nburst-True] PASSED [ 67%]
+tests/unit/test_money_ingestion.py::test_text_contains_verbatim_and_ellipsis[my home ... was broken into-True] PASSED [ 67%]
+tests/unit/test_money_ingestion.py::test_text_contains_verbatim_and_ellipsis[geyser exploded-False] PASSED [ 68%]
+tests/unit/test_money_ingestion.py::test_text_contains_verbatim_and_ellipsis[broken into ... my home-False] PASSED [ 68%]
+tests/unit/test_money_ingestion.py::test_text_contains_verbatim_and_ellipsis[-False] PASSED [ 69%]
+tests/unit/test_money_ingestion.py::test_text_contains_verbatim_and_ellipsis[None-False] PASSED [ 70%]
+tests/unit/test_payout.py::test_deductible_and_limit_boundaries[3000-0.00] PASSED [ 70%]
+tests/unit/test_payout.py::test_deductible_and_limit_boundaries[5000-0.00] PASSED [ 71%]
+tests/unit/test_payout.py::test_deductible_and_limit_boundaries[85000-80000.00] PASSED [ 72%]
+tests/unit/test_payout.py::test_deductible_and_limit_boundaries[600000-495000.00] PASSED [ 72%]
+tests/unit/test_payout.py::test_deductible_and_limit_boundaries[500000-495000.00] PASSED [ 73%]
+tests/unit/test_payout.py::test_below_deductible_explains_floor PASSED   [ 74%]
+tests/unit/test_payout.py::test_above_limit_explains_cap PASSED          [ 74%]
+tests/unit/test_payout.py::test_zero_deductible_medical_and_life PASSED  [ 75%]
+tests/unit/test_payout.py::test_formula_caps_loss_before_deductible_when_loss_exceeds_limit PASSED [ 75%]
+tests/unit/test_payout.py::test_missing_financial_input_marks_incomplete[claimed] PASSED [ 76%]
+tests/unit/test_payout.py::test_missing_financial_input_marks_incomplete[limit] PASSED [ 77%]
+tests/unit/test_payout.py::test_missing_financial_input_marks_incomplete[deductible] PASSED [ 77%]
+tests/unit/test_payout.py::test_negative_inputs_rejected[claimed] PASSED [ 78%]
+tests/unit/test_payout.py::test_negative_inputs_rejected[limit] PASSED   [ 79%]
+tests/unit/test_payout.py::test_negative_inputs_rejected[deductible] PASSED [ 79%]
+tests/unit/test_payout.py::test_float_inputs_rejected PASSED             [ 80%]
+tests/unit/test_payout.py::test_rounding_half_up_to_paise PASSED         [ 81%]
+tests/unit/test_payout.py::test_calculation_records_inputs_and_steps PASSED [ 81%]
+tests/unit/test_payout.py::test_home_sub_limit_selected_when_claim_within_lowest PASSED [ 82%]
+tests/unit/test_payout.py::test_home_sub_limit_ambiguous_above_lowest_needs_breakdown PASSED [ 82%]
+tests/unit/test_payout.py::test_single_limit_policies PASSED             [ 83%]
+tests/unit/test_validator_decision.py::test_policy_number_format[HOME-2026-1001-True] PASSED [ 84%]
+tests/unit/test_validator_decision.py::test_policy_number_format[veh-2026-2001-True] PASSED [ 84%]
+tests/unit/test_validator_decision.py::test_policy_number_format[HOME2026-False] PASSED [ 85%]
+tests/unit/test_validator_decision.py::test_policy_number_format[ABC-2026-1001-False] PASSED [ 86%]
+tests/unit/test_validator_decision.py::test_policy_number_format[None-False] PASSED [ 86%]
+tests/unit/test_validator_decision.py::test_policy_prefix_mismatch_needs_review PASSED [ 87%]
+tests/unit/test_validator_decision.py::test_full_validation_email_1_all_pass PASSED [ 87%]
+tests/unit/test_validator_decision.py::test_exclusion_with_verified_quote_fails_rule PASSED [ 88%]
+tests/unit/test_validator_decision.py::test_exclusion_with_fabricated_quote_is_discarded PASSED [ 89%]
+tests/unit/test_validator_decision.py::test_exclusion_not_in_policy_is_discarded PASSED [ 89%]
+tests/unit/test_validator_decision.py::test_non_determinable_exclusion_goes_to_review_not_rejection PASSED [ 90%]
+tests/unit/test_validator_decision.py::test_coverage_needs_verified_quote PASSED [ 91%]
+tests/unit/test_validator_decision.py::test_no_coverage_match_needs_review PASSED [ 91%]
+tests/unit/test_validator_decision.py::test_event_aware_documents_vehicle_theft_waives_photos_and_estimate PASSED [ 92%]
+tests/unit/test_validator_decision.py::test_fir_required_for_vehicle_theft_without_fir PASSED [ 93%]
+tests/unit/test_validator_decision.py::test_fir_not_required_for_natural_death PASSED [ 93%]
+tests/unit/test_validator_decision.py::test_missing_documents_detected PASSED [ 94%]
+tests/unit/test_validator_decision.py::test_validation_is_deterministic PASSED [ 94%]
+tests/unit/test_validator_decision.py::test_decision_approved PASSED     [ 95%]
+tests/unit/test_validator_decision.py::test_decision_rejected_only_on_exclusion PASSED [ 96%]
+tests/unit/test_validator_decision.py::test_failed_document_rule_never_rejects PASSED [ 96%]
+tests/unit/test_validator_decision.py::test_missing_mandatory_info_takes_priority_over_potential_rejection PASSED [ 97%]
+tests/unit/test_validator_decision.py::test_conclusive_exclusion_rejects_even_with_documents_outstanding PASSED [ 98%]
+tests/unit/test_validator_decision.py::test_review_flag_kept_separate_from_outcome PASSED [ 98%]
+tests/unit/test_validator_decision.py::test_incomplete_payout_blocks_approval PASSED [ 99%]
+tests/unit/test_validator_decision.py::test_not_applicable_rules_do_not_block PASSED [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.12.3-final-0 _______________
+
+Name                               Stmts   Miss  Cover
+------------------------------------------------------
+claims/__init__.py                     1      0   100%
+claims/__main__.py                    60      1    98%
+claims/audit.py                       17      0   100%
+claims/classification.py              34      0   100%
+claims/communication/__init__.py       0      0   100%
+claims/communication/composer.py     126      1    99%
+claims/communication/outbox.py        22      0   100%
+claims/completeness.py                30      0   100%
+claims/config.py                      35     10    71%
+claims/decision.py                    30      0   100%
+claims/errors.py                       5      0   100%
+claims/extraction.py                  43      1    98%
+claims/ingestion.py                   75      2    97%
+claims/llm/__init__.py                 2      0   100%
+claims/llm/client.py                  62      5    92%
+claims/llm/prompts.py                 20      0   100%
+claims/models.py                     159      0   100%
+claims/money.py                       46      4    91%
+claims/payout.py                      27      0   100%
+claims/policy/__init__.py              0      0   100%
+claims/policy/catalog.py              36      0   100%
+claims/policy/matcher.py              21      0   100%
+claims/policy/validator.py            87      1    99%
+claims/reporting.py                   42      4    90%
+claims/workflow.py                    85      0   100%
+------------------------------------------------------
+TOTAL                               1065     29    97%
+=========================== short test summary info ============================
+SKIPPED [1] tests/unit/test_classification_catalog.py:80: Policy.rtf source file not present
+================ 157 passed, 1 skipped, 11 deselected in 2.00s =================

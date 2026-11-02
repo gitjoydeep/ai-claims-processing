@@ -1,0 +1,20 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- .venv/bin/python
+rootdir: <project-root>
+configfile: pytest.ini
+plugins: platformdirs-4.13.6, cov-7.1.0, anyio-4.15.1, langsmith-0.14.14
+collecting ... collected 11 items
+
+tests/e2e/test_live_llm.py::test_live_dataset_outcomes[Water damage in my bathroom] PASSED [  9%]
+tests/e2e/test_live_llm.py::test_live_dataset_outcomes[Burglary at my home] PASSED [ 18%]
+tests/e2e/test_live_llm.py::test_live_dataset_outcomes[Fire damage in my living room] PASSED [ 27%]
+tests/e2e/test_live_llm.py::test_live_dataset_outcomes[Engine breakdown claim] PASSED [ 36%]
+tests/e2e/test_live_llm.py::test_live_dataset_outcomes[My car has been stolen] PASSED [ 45%]
+tests/e2e/test_live_llm.py::test_live_dataset_outcomes[Cracked windshield due to falling tree branch] PASSED [ 54%]
+tests/e2e/test_live_llm.py::test_live_dataset_outcomes[Request for hospitalisation claim] PASSED [ 63%]
+tests/e2e/test_live_llm.py::test_live_dataset_outcomes[Hospitalisation reimbursement request] PASSED [ 72%]
+tests/e2e/test_live_llm.py::test_live_dataset_outcomes[Request to initiate death claim] PASSED [ 81%]
+tests/e2e/test_live_llm.py::test_live_dataset_outcomes[Need assistance with a life insurance claim] PASSED [ 90%]
+tests/e2e/test_live_llm.py::test_live_prompt_injection PASSED            [100%]
+
+======================== 11 passed in 230.62s (0:03:50) ========================

@@ -1,0 +1,195 @@
+EMAIL 1 | Home Insurance | Complete
+Subject: Water damage in my bathroom
+
+Hello,
+
+My policy number is HOME-2026-1001.
+
+On 25 October 2026, my geyser burst in the bathroom at my residence in Mumbai, causing water damage.
+
+The bathroom tiles and the wooden cabinet were damaged by the water.
+
+The estimated repair cost is Rs. 45,000. I have attached photographs of the damage and the plumber's estimate.
+
+Please help me file a claim.
+
+Regards,
+Neha Kapoor
+
+========================================================================
+
+EMAIL 2 | Home Insurance | Complete
+Subject: Burglary at my home
+
+Hello,
+
+My policy number is HOME-2026-1002.
+
+On 27 October 2026, my home in Pune was broken into through a window while I was away.
+
+My television and laptop were stolen, and the window glass was broken.
+
+The estimated loss is Rs. 1,20,000. I have attached a copy of the police FIR and photographs of the broken window.
+
+Please let me know how to proceed with my claim.
+
+Regards,
+Sanjay Mehta
+
+========================================================================
+
+EMAIL 3 | Home Insurance | Missing policy number
+Subject: Fire damage in my living room
+
+Hello,
+
+On 26 October 2026, there was an electrical short circuit at my home in Bangalore that caused a fire in the living room.
+
+My sofa and curtains were burnt in the fire.
+
+The estimated damage is Rs. 35,000. I have attached photographs of the damaged items.
+
+Please help me file a claim.
+
+Regards,
+Deepa Iyer
+
+========================================================================
+
+EMAIL 4 | Vehicle Insurance | Complete - Rejected (exclusion)
+Subject: Engine breakdown claim
+
+Hello,
+
+My vehicle insurance policy number is VEH-2026-2001.
+
+On 24 October 2026, my car's engine stopped working while I was driving on the highway. The mechanic who inspected it said the engine had suffered a mechanical breakdown due to wear and tear from long-term use.
+
+The estimated repair cost to replace the engine is Rs. 95,000. I have attached the mechanic's inspection report and the repair estimate.
+
+Please let me know how to proceed with my claim.
+
+Regards,
+Karan Mehta
+
+========================================================================
+
+EMAIL 5 | Vehicle Insurance | Complete
+Subject: My car has been stolen
+
+Hello,
+
+My vehicle insurance policy number is VEH-2026-2002.
+
+My car was stolen from my apartment parking area in Bangalore on 26 October 2026 at approximately 9:30 PM.
+
+The vehicle is a Hyundai Creta with registration number KA 05 CD 5678. I have already filed a police complaint; the FIR number is BLR/2026/1026/458.
+
+The estimated current value of the vehicle is Rs. 6,50,000. I have attached a copy of the FIR and the vehicle registration certificate.
+
+Please help me with the claim process.
+
+Regards,
+Arjun Rao
+
+========================================================================
+
+EMAIL 6 | Vehicle Insurance | Missing claimed amount
+Subject: Cracked windshield due to falling tree branch
+
+Hello,
+
+My vehicle insurance policy number is VEH-2026-2003.
+
+A tree branch fell on my car on 27 October 2026 during heavy rain, cracking the windshield.
+
+My car is a Maruti Suzuki Baleno with registration number KA 01 EF 9012.
+
+I have attached photographs of the damaged windshield. I haven't received the garage's repair quote yet - I'll share it once I have it.
+
+I would like to register a claim. Please let me know the next steps.
+
+Regards,
+Sneha Kulkarni
+
+========================================================================
+
+EMAIL 7 | Medical Insurance | Complete
+Subject: Request for hospitalisation claim
+
+Hello,
+
+My medical insurance policy number is MED-2026-3001.
+
+I was admitted to Apollo Hospital, Bangalore, on 20 October 2026 due to severe abdominal pain. I was diagnosed with appendicitis and underwent surgery. I was discharged on 24 October 2026.
+
+The total hospital bill for the surgery and my four-day stay was Rs. 1,20,000.
+
+I have attached the hospital bills, discharge summary and medical reports.
+
+Please help me process the reimbursement claim.
+
+Regards,
+Meera Joshi
+
+========================================================================
+
+EMAIL 8 | Medical Insurance | Complete
+Subject: Hospitalisation reimbursement request
+
+Hello,
+
+My medical insurance policy number is MED-2026-3002.
+
+I was admitted to Manipal Hospital on 22 October 2026 after being diagnosed with dengue. I received treatment for four days and was discharged on 26 October 2026.
+
+The total hospital bill came to Rs. 48,000.
+
+I have attached the hospital bill and the discharge summary.
+
+Please let me know how to proceed with my claim.
+
+Regards,
+Vikram Shetty
+
+========================================================================
+
+EMAIL 9 | Life Insurance | Complete
+Subject: Request to initiate death claim
+
+Hello,
+
+I am writing to initiate a claim against my husband's life insurance policy. The policy number is LIFE-2026-4001. The insured person's name is Ramesh Kumar.
+
+He passed away on 15 October 2026 due to a natural illness. I am his wife and the registered nominee under the policy.
+
+The policy's sum assured is Rs. 15,00,000.
+
+I have attached the death certificate and the required supporting documents.
+
+Please guide me through the claim settlement process.
+
+Regards,
+Lakshmi Kumar
+
+========================================================================
+
+EMAIL 10 | Life Insurance | Missing policy number and claimed amount
+Subject: Need assistance with a life insurance claim
+
+Hello,
+
+My brother, Rohan Mehta, passed away on 22 October 2026 following a road accident. I am his registered nominee, but I am unable to locate his insurance policy number.
+
+I have filed a police complaint regarding the accident; the FIR number is BLR/2026/1022/789.
+
+We have applied for the death certificate but have not received it yet.
+
+I would like to know how to initiate the claim and what documents are required.
+
+Please assist me.
+
+Regards,
+Amit Mehta
+
+========================================================================

@@ -1,0 +1,30 @@
+# Secrets / local environment
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python / test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Generated at runtime by `python -m claims run`
+outputs/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Local-only reference material and working notes
+*.pdf
+*.rtf
+Session2_*.ipynb
+PROJECT_STRUCTURE.md
+docs/01_requirements_analysis.md
